@@ -49,7 +49,7 @@ if uploaded_file:
 
         if st.button("Next Line"):
             st.session_state.line_index += 1
-            st.experimental_rerun()
+            st.rerun()
 
     except StopIteration:
         st.warning("End of CSV reached.")
