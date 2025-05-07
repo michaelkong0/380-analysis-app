@@ -38,7 +38,7 @@ if uploaded_file:
         
         # Plot
         fig, ax = plt.subplots()
-        ax.plot(values, marker='o')
+        ax.plot(values)
         ax.set_title(f"Line {st.session_state.line_index + 1}")
         st.pyplot(fig)
 
